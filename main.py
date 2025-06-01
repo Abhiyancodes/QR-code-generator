@@ -14,7 +14,7 @@ url = st.text_input("Enter the URL:", placeholder="https://example.com", on_chan
 button = st.button("Generate QR code")
 
 if button:
-    if url and validators.url(url):
+    if url:
         qr_img = qr.make(url)
 
         img_bytes = io.BytesIO()
