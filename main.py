@@ -9,7 +9,7 @@ st.title("QR Code Generator")
 st.markdown("Easily turn any link into a QR code! Just paste your URL below and click the button to generate your QR code instantly.")
 
 
-url = st.text_input("Enter the url:")
+url = st.text_input("Enter the URL:", placeholder="https://example.com")
 
 button = st.button("Generate QR code")
 
